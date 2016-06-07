@@ -6,7 +6,7 @@ const angular = require('angular');
 // // require('angular-route');
 
 
-const sgvdtApp = angular.module('sgvdtApp', [require('angular-route'), 'ui.bootstrap']);
+const sgvdtApp = angular.module('sgvdtApp', [require('angular-route'), require('angular-ui-bootstrap')]);
 
 require('./services')(sgvdtApp);
 require('./offenses')(sgvdtApp);
@@ -37,6 +37,6 @@ $rp
     // controllerAs: 'map'
 })
 .otherwise({
-    redirectTo: '/offenses'
+    redirectTo: '/map'
 });
 }]);
