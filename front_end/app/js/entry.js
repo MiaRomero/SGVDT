@@ -6,7 +6,7 @@ const angular = require('angular');
 // // require('angular-route');
 
 
-const sgvdtApp = angular.module('sgvdtApp', [require('angular-route'), require('angular-ui-bootstrap')]);
+const sgvdtApp = angular.module('sgvdtApp', [require('angular-route')]);
 
 require('./services')(sgvdtApp);
 require('./offenses')(sgvdtApp);
